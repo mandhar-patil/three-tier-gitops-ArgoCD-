@@ -216,7 +216,7 @@ spec:
         name: mongo-data
       spec:
         accessModes: ["ReadWriteOnce"]
-        storageClassName: "ebs-sc"
+        storageClassName: "ebs-sc"                    # this should be match with ebs volume name
         resources:
           requests:
             storage: 1Gi
