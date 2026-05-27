@@ -16,7 +16,7 @@ spec:
    spec:
      containers:
        - name: frontend
-         image: mandhar12/informatrix-frontend:v1
+         image: mandhar12/three-tier-frontend:1.0
          ports:
           - containerPort: 3000
          env:
