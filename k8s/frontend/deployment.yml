@@ -30,4 +30,4 @@ spec:
           - containerPort: 3000
          env:
            - name: REACT_APP_BACKEND_URL
-             value: "http://backend-service:3500/api/tasks"
+             value: "http://a68b0309d7cf54e1f8f1b89ed092638e-1088066927.us-east-2.elb.amazonaws.com:3500/api/tasks"
