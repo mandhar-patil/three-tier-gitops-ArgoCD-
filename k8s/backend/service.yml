@@ -9,4 +9,4 @@ spec:
   ports:
    - port: 3500
      targetPort: 3500
-  type: ClusterIP
+  type: LoadBalancer
