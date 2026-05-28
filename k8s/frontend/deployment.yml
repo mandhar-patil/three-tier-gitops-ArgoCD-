@@ -14,6 +14,15 @@ spec:
       app: frontend
 
    spec:
+     affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: tier
+                operator: In
+                values:
+                - frontend
      containers:
        - name: frontend
          image: mandhar12/three-tier-frontend:1.0
