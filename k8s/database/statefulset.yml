@@ -15,6 +15,15 @@ spec:
        app: mongodb
 
     spec:
+       affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: tier
+                operator: In
+                values:
+                - database
        containers:
            - name: mongodb
              image: mongo:7.0
